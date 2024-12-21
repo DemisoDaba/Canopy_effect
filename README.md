@@ -1,4 +1,4 @@
-# Temporal Analysis of Tree Canopy Coverage and Its Influence on Soil Moisture in Ethiopian Watersheds (2017-2023)
+# Temporal Analysis of Tree Canopy and Its Influence on Soil Moisture in Ethiopian Watersheds (2017-2023)
 
 ## Overview
 

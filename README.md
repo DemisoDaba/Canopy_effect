@@ -1,16 +1,15 @@
-# Temporal Analysis of Tree Canopy Coverage, Soil Moisture, and Precipitation in the Kulfo Watershed, Ethiopia (2017-2023)
+#@ Temporal Analysis of Tree Canopy Coverage and Its Influence on Soil Moisture in the Kulfo Watershed, Ethiopia (2017-2023)
 
 ## Overview
 
-This repository contains code to perform a **temporal analysis** of **tree canopy coverage (NDVI)**, **soil moisture**, and **precipitation** in the **Kulfo Watershed** in Ethiopia from **2017 to 2023** using **Google Earth Engine (GEE)**. The analysis aggregates data annually for three key variables to explore how changes in tree canopy coverage influence soil moisture and precipitation over time.
+This repository contains code to perform a **temporal analysis** of **tree canopy coverage (NDVI)** and its influence on **soil moisture** in the **Kulfo Watershed** in Ethiopia from **2017 to 2023** using **Google Earth Engine (GEE)**. The analysis aggregates data annually to explore the relationship between tree canopy coverage and soil moisture over time.
 
 The results are exported as CSV files for further analysis.
 
 ## Dataset
 
-- **Precipitation**: Aggregated using the **UCSB-CHG CHIRPS dataset**, providing daily precipitation data for the period 2017–2023.
+- **Tree Canopy Coverage (NDVI)**: Aggregated using the **MODIS MOD13A1 dataset**, providing data on vegetation indices for the period 2017–2023.
 - **Soil Moisture**: Aggregated using the **NASA_USDA SMAP soil moisture dataset**, providing global soil moisture data from 2017–2023.
-- **Tree Canopy Coverage (NDVI)**: Aggregated using the **MODIS MOD13A1 dataset** for the period 2017–2023.
 
 The data is aggregated annually to analyze yearly trends and relationships between these variables.
 
@@ -47,18 +46,9 @@ Once the analysis is complete, the data will be exported to your **Google Drive*
 ### 4. Check Results
 
 - Once the export is complete, download the CSV files from your **Google Drive**.
-- The CSV files will contain annual data for each variable: **Precipitation**, **Soil Moisture**, and **Tree Canopy (NDVI)**.
+- The CSV files will contain annual data for each variable: **Tree Canopy (NDVI)** and **Soil Moisture**.
 
 ## Code Overview
-
-### Precipitation Analysis (`precipitation_analysis.js`)
-
-This script aggregates **CHIRPS precipitation data** from 2017 to 2023 into **annual totals** for the Kulfo Watershed.
-
-Key steps:
-- Filters CHIRPS daily precipitation data by region (Kulfo Watershed) and time period (2017–2023).
-- Aggregates the data annually using the **sum** reducer.
-- Exports the annual totals to **CSV**.
 
 ### Soil Moisture Analysis (`soil_moisture_analysis.js`)
 
